@@ -1,0 +1,141 @@
+@media only screen and (min-width:320px) and (max-width:480px) {
+  body>  header {
+        padding: 10px 20px !important;
+        height: 75vh !important;
+    }
+
+    header nav .right {
+        display: none;
+    }
+
+    header .banner {
+        margin-left: 0;
+    }
+
+    header .banner h1 {
+        font-size: 25px;
+    }
+
+    header .banner .search button {
+        margin-top: 10px;
+    }
+
+    header .banner i {
+        font-size: 50px;
+    }
+
+    section.details {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.details .bleu {
+        padding: 10px 15px;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    section.details .bleu .cours {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.details .chiffres p {
+        text-align: justify;
+    }
+
+    section.details .chiffres .blocs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.details .chiffres .infos {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+    section.details .chiffres .infos input, section.details .chiffres .infos button{
+        width: 100%;
+        padding: 10px ;
+    }
+    section.cours {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px !important;
+    }
+    section.cours .cour{
+        width: 100%;
+    }
+    section.popular {
+        padding: 20px 20px;
+    }
+    section.popular header {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: start;
+        align-items: start;
+        gap: 30px;
+        margin-bottom: 0;
+    }
+    section.popular p.texte {
+        color: black;
+        margin-top: 15px !important;
+        margin-bottom: 20px !important;
+    }
+    section.popular .row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    section.expert .texte {
+        width: 100%;
+    }
+    section.expert .owl-carousel {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    section.expert .texte h1{
+        font-size: 30px;
+    }
+    section.expert .owl-carousel .item{
+        width: 100%;
+    }
+    section.expert .owl-carousel .item img{
+        width: 100%;
+    }
+    section.news {
+        padding: 20px 20px;
+    }
+    section.news .bloc1 h1 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    section.news .bloc2 p {
+        margin: 15px;
+        text-align: justify;
+    }
+    section.news .bloc2 input[type="submit"] {
+        width: 100%;
+        margin-top: 15px;
+    }
+    footer {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    footer .left .res {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .right .row{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}
