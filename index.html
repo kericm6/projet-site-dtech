@@ -10,7 +10,7 @@
     <!-- lien css owl-carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -338,7 +338,8 @@
         </div>
         <div class="bloc2">
             <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui neque, in voluptate eveniet ut quasi repellat ratione quia? Dicta velit voluptates maxime rem </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui neque, in voluptate eveniet ut quasi
+                repellat ratione quia? Dicta velit voluptates maxime rem </p>
             <input type="text" name="" id="" placeholder="entrer votre addresse email">
             <input type="submit" value="subscribe">
         </div>
@@ -346,10 +347,10 @@
 
     <footer>
         <div class="left">
-           <div class="logo">
+            <div class="logo">
                 <img src="images/Pepsi-logo.png" alt="" width="140">
-           </div>
-           <div class="res">
+            </div>
+            <div class="res">
                 <p>
                     <i class="fa-brands fa-facebook-f"></i>
                 </p>
@@ -365,7 +366,7 @@
                 <p>
                     <i class="fa-brands fa-youtube"></i>
                 </p>
-           </div>
+            </div>
         </div>
         <div class="right">
             <div class="row">
@@ -434,10 +435,21 @@
         $('.owl-carousel').owlCarousel({
             loop: true,
             nav: true,
-            items: 4,
+            items: 1,
+            margin: 20,
             dots: true,
             autoplay: true,
             autoplayTimeout: 1000,
+            0: {
+                items: 4,
+                nav: true
+            },
+            320: {
+                items: 1,
+            },
+            1000: {
+                // items: 4,
+            }
         })
     </script>
 
