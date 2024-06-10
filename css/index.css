@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Display", sans-serif;
+    /* box-shadow: inset 2px 2px  2px red; */
+}
+
+:root {
+    --rouge: #fe1300;
+    --bleu: #0d0c8c;
+    --blanc: #fff;
+}
+
+body>header {
+    padding: 20px 90px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/header.jpg);
+    height: 90vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .right ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header nav .right ul li a {
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+header nav .right ul li a.active {
+    font-weight: bold;
+    color: var(--rouge);
+}
+
+header nav .right ul li a i {
+    font-size: 10px;
+}
+
+header .banner {
+    margin-left: 250px;
+    margin-top: 9%;
+}
+
+header .banner h1 {
+    color: var(--blanc);
+}
+
+header .banner i {
+    display: block;
+}
+
+header .banner .search {
+    margin: 20px;
+    margin-left: 0;
+}
+
+header .banner .search input {
+    outline: none;
+    border: 1px solid gray;
+    background: transparent;
+    color: var(--blanc);
+    padding: 8px 25px;
+    width: 300px;
+}
+
+header .banner .search button {
+    border: none;
+    padding: 9px 25px;
+    background-color: var(--bleu);
+
+    color: var(--blanc);
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 33px 11px rgba(12, 12, 140, 0.64);
+    -moz-box-shadow: 0px 0px 33px 11px rgba(12, 12, 140, 0.64);
+    box-shadow: 0px 0px 33px 11px rgba(12, 12, 140, 0.64);
+}
+
+header .banner i {
+    font-size: 80px;
+    color: var(--blanc);
+}
+
+/* section details*/
+
+section.details {
+    padding: 90px 90px;
+    display: flex;
+    gap: 40px;
+}
+
+section.details .bleu {
+    background: var(--bleu);
+    width: 40%;
+    padding: 40px 30px;
+    margin-top: -170px;
+}
+
+section.details .bleu h2 {
+    color: var(--blanc);
+    /* position: absolute; */
+    /* border-bottom: 2px solid var(--rouge); */
+}
+
+section.details .bleu hr {
+    width: 30%;
+    background: var(--rouge);
+    height: 3px;
+    border: none;
+    margin-top: 15px;
+}
+
+/* section.details .bleu h2::after{
+    content: "";
+    background: var(--rouge);
+    height: 20px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 10px; 
+} */
+section.details .bleu .cours {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0;
+    gap: 30px;
+}
+
+section.details .bleu .cours .card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    /* align-content: center; */
+    text-align: center;
+    padding: 20px 20px;
+}
+
+section.details .bleu .cours .card i {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: var(--rouge);
+}
+
+section.details .bleu .cours .card p {
+    color: var(--blanc);
+    font-weight: bold;
+}
+
+section.details .chiffres {}
+
+section.details .chiffres hr {
+    width: 23%;
+    background: var(--rouge);
+    height: 3px;
+    border: none;
+    margin-top: 15px;
+}
+
+section.details .chiffres p {
+    margin-top: 10px;
+    color: gray;
+}
+
+section.details .chiffres .blocs {
+    display: flex;
+    gap: 50px;
+    /* margin-left: 0; */
+    margin: 40px 0;
+}
+
+section.details .chiffres .blocs .bloc {
+    text-align: left;
+}
+
+section.details .chiffres .blocs .bloc .number {
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--bleu);
+}
+
+section.details .chiffres .blocs .bloc p {
+    color: black;
+    font-weight: bold;
+}
+
+section.details .chiffres p.texte {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+section.details .chiffres .infos {
+    display: flex;
+    gap: 25px;
+}
+
+section.details .chiffres .infos input {
+    outline: none;
+    width: 250px;
+    padding: 10px 30px;
+}
+
+section.details .chiffres .infos button {
+    border: none;
+    width: 250px;
+    text-align: center;
+    background: var(--bleu);
+    color: var(--blanc);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section.cours {
+    padding: 0 90px;
+    margin-bottom: 70px;
+    display: flex;
+    gap: 15px;
+}
+
+section.cours .cour {
+    color: var(--blanc);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+}
+
+section.cours .cour:first-child {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.cours .cour:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.cours .cour:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.cours .cour:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/img4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.cours .cour:nth-child(5) {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/img5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.cours .cour:nth-child(6) {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../images/img6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section.popular {
+    padding: 0 90px;
+}
+
+section.popular header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.popular header h1 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+section.popular header h1 span {
+    color: var(--bleu);
+
+}
+
+section.popular header .texte hr {
+    width: 70%;
+    background: var(--rouge);
+    height: 3px;
+    border: none;
+    margin-top: 15px;
+}
+
+section.popular header .buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+section.popular header .buttons i {
+    border: 1px solid gray;
+    /* font-size: 30px; */
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+section.popular header .buttons i:hover {
+    background: var(--bleu);
+    color: var(--blanc);
+    transition: .5s;
+}
+
+section.popular header .buttons p {
+    font-weight: bold;
+}
+
+section.popular p.texte {
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+section.popular .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.popular .row .col {
+    /* background-color: #0d0c8c; */
+    width: 350px;
+    border: 1px solid rgba(128, 128, 128, 0.356);
+}
+
+section.popular .row .col .card .img img {
+    width: 350px;
+
+}
+
+section.popular .row .col .card .bloc {
+    padding: 17px 20px;
+}
+
+section.popular .row .col .card .bloc .texte p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section.popular .row .col .card .bloc .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+section.popular .row .col .card .bloc .profile img {
+    width: 50px;
+}
+
+section.popular .row .col .card .bloc hr {
+    margin: 10px;
+    height: 1px;
+    opacity: .2;
+}
+
+section.popular .row .col .card .bloc .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+section.popular .row .col .card .bloc .footer .prix span {
+    color: var(--rouge);
+    font-weight: bold;
+}
+
+section.popular .row .col .card .bloc .footer .infos {
+    display: flex;
+    gap: 20px;
+}
+
+section.popular .row .col .card .bloc .footer .infos .icone i {
+    color: var(--bleu);
+}
+
+section.expert {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/expert.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.expert .texte {
+    text-align: center;
+    width: 40%;
+    color: var(--blanc);
+    margin-bottom: 20px;
+}
+
+section.expert .texte h1 {
+    color: var(--bleu);
+    font-size: 40px;
+}
+
+section.expert .owl-carousel .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.expert .owl-carousel .col .img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+section.expert .owl-carousel .col .img {
+    background: var(--blanc);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+section.expert .owl-carousel .col p {
+    color: var(--blanc);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+section.news {
+    background: var(--bleu);
+    padding: 90px 90px;
+}
+
+section.news .bloc1 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+section.news .bloc1 h1 {
+    color: var(--blanc);
+    margin-bottom: 25px;
+}
+
+section.news .bloc1 button {
+    border: none;
+    padding: 10px 45px;
+    background-color: var(--blanc);
+    color: var(--bleu);
+    font-weight: bold;
+    transition: .4s;
+}
+
+section.news .bloc1 button:hover {
+    background: transparent;
+    color: var(--blanc);
+    border: 2px solid var(--blanc);
+    transition: .4s;
+}
+
+section.news .bloc2 {
+    text-align: center;
+    color: var(--blanc);
+}
+
+section.news .bloc2 p {
+    margin: 15px;
+}
+
+section.news .bloc2 input[type="text"] {
+    display: inline-block;
+    outline: none;
+    padding: 10px 45px;
+    background: transparent;
+    font-weight: bold;
+    color: var(--blanc);
+    width: 300px;
+    border: 2px solid var(--blanc);
+    border-radius: 3px;
+}
+
+section.news .bloc2 input[type="submit"] {
+    border: none;
+    background: var(--blanc);
+    padding: 11px 30px;
+    font-weight: bold;
+    color: var(--bleu);
+}
+
+
+
+/* footer*/
+footer {
+    background-color: #000;
+    padding: 90px 90px;
+    display: flex;
+    gap: 200px;
+}
+
+footer .left .res {
+    display: flex;
+    gap: 10px;
+}
+
+footer .left .res p {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.1px);
+    -webkit-backdrop-filter: blur(12.1px);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    
+}
+
+footer .left .res p:hover {
+    background: var(--bleu);
+    transition: .3s;
+}
+
+footer .left .res p i {
+    color: var(--blanc);
+    margin-top: 15px;
+}
+
+footer .right {
+    color: gray;
+}
+footer .right .row{
+    flex-direction: row;
+    display: flex;
+    gap: 50px;
+}
+footer .right .row .col h2, 
+footer .right .row .col .item i{
+    color: var(--bleu);
+}
+footer .right .row .col .item {
+    margin: 10px;
+}
+footer .right .row .col .item i{
+    margin-right: 10px;
+}
+footer .right .row .col ul{
+    list-style: none;
+    margin-top: 15px;
+}
